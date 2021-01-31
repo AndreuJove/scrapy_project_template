@@ -6,7 +6,12 @@
 import scrapy
 
 
-class CrawlerItem(scrapy.Item):
+class Book(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+
+    title_book = scrapy.Field()
+    image_urls=scrapy.Field()
+    images=scrapy.Field()
+
+    
